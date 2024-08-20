@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1069.3634, g: 1581.7346, b: 3714.8052, a: 1}
+  m_IndirectSpecularColor: {r: 1068.609, g: 1579.9299, b: 3706.4536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -547,9 +547,10 @@ MonoBehaviour:
   m_Randomizers:
   - rid: 7822401103092514822
   - rid: 3966292926352064516
-  - rid: 3966292926352064517
   - rid: 7822401103092514823
+  - rid: 3966292926352064517
   - rid: 3966292926352064525
+  - rid: 3966292950713630720
   configuration: {fileID: 0}
   constants:
     randomSeed: 539662031
@@ -666,6 +667,50 @@ MonoBehaviour:
         <minAllowed>k__BackingField: 0
         <maxAllowed>k__BackingField: 0
         <shouldCheckValidRange>k__BackingField: 0
+    - rid: 3966292950713630720
+      type: {class: ForegroundScaleRandomizer, ns: , asm: Assembly-CSharp}
+      data:
+        m_Enabled: 1
+        collapsed: 0
+        <enabledStateCanBeSwitchedByUser>k__BackingField: 1
+        scale:
+          collapsed: 0
+          x:
+            rid: 3966292950713630721
+          y:
+            rid: 3966292950713630722
+          z:
+            rid: 3966292950713630723
+    - rid: 3966292950713630721
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0.02
+          maximum: 0.08
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 3966292950713630722
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0.01
+          maximum: 0.1
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 3966292950713630723
+      type: {class: UniformSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        range:
+          minimum: 0.02
+          maximum: 0.08
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
     - rid: 7822401103092514822
       type: {class: BackgroundObjectPlacementRandomizer, ns: UnityEngine.Perception.Randomization.Randomizers,
         asm: Unity.Perception.Runtime}
@@ -710,7 +755,7 @@ MonoBehaviour:
         collapsed: 0
         <enabledStateCanBeSwitchedByUser>k__BackingField: 1
         depth: -3
-        separationDistance: 1.5
+        separationDistance: 1
         placementArea: {x: 8, y: 4}
         prefabs:
           collapsed: 0
