@@ -35,7 +35,7 @@ You can either use Microsoft Visual Studio or Visual Studio Code as the script e
 
 ## Running the project
 - Click the play button at the top of the unity scene.
-- Open **Edit -> Project Settings -> Perception**, this will bring uo the **_Perception Settings_** pane. Click _**Show Folder**_ to show where the data is stored.
+- Open **Edit -> Project Settings -> Perception**, this will bring up the **_Perception Settings_** pane. Click _**Show Folder**_ to show where the data is stored.
 - To generate dataset accepted for YOLO training, run the command below to change each solo folder to coco dataset.
 ```bash
 solo2coco <SOLO_PATH> <COCO_PATH>
