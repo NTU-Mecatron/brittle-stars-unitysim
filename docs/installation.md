@@ -34,7 +34,7 @@ You can either use Microsoft Visual Studio or Visual Studio Code as the script e
 2. Edit -> Preferences -> External Tools. Set the External Script Editor to the desired editor.
 
 ## Running the project
-- Click the play button at the top of the unity scene.
+- Click on the play (**▷**) button located at the top middle section of the editor to run your simulation.
 - Open **Edit -> Project Settings -> Perception**, this will bring up the **_Perception Settings_** pane. Click _**Show Folder**_ to show where the data is stored.
 - To generate dataset accepted for YOLO training, run the command below to change each solo folder to coco dataset.
 ```bash
