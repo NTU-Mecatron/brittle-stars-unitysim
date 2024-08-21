@@ -23,7 +23,6 @@ We have made one example scene called `OutdoorsScene`. You can create your own s
 
 ![image](https://github.com/user-attachments/assets/219d1921-848f-465a-a336-b3d1882cda99)
 
-
 ### Simulation Scene
 ![image](https://github.com/user-attachments/assets/e9ce1bb2-5d8a-4203-802b-65a28237b43f)
 
@@ -43,6 +42,13 @@ This game object has a volume with `Motion Blur` attached to it. It is created t
 
 > Note: For more information, please refer to the [Unity Perception Tutorial](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Tutorial/Phase1.md)
 
+## Scenario Properties
+![image](https://github.com/user-attachments/assets/d4954376-72f5-49b4-b8ee-11733b258bdb)
+
+This component will controll the number of frames taken for each iteration and the number of iteration.
+> Note: Iteration means different combination and permutation of brittle stars with different background.
+- **🟢 Action**: Set the rest of the properties of `Frames Per Iteration` and `Iteration Count` according to your preferences. The parameters we used is `Frames Per Iteration = 3, Iteration Count = 250`. This means that for each iteration, 3 frames will be taken and 250 sets of data with different randomizer combinations will be generated. 
+  
 ## Randomizers
 The randomizers are implemented here in order to generate various combinations of brittle stars layouts with different seabeds.
 > Note: For proper setup guide of randomizers, please refer to the [Unity Perception Tutorial 1](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Tutorial/Phase1.md) and [Unity Perception Tutorial 2](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Tutorial/Phase2.md)
