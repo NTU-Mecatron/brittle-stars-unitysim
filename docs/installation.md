@@ -38,6 +38,7 @@ You can either use Microsoft Visual Studio or Visual Studio Code as the script e
 - Open **Edit -> Project Settings -> Perception**, this will bring uo the **_Perception Settings_** pane. Click _**Show Folder**_ to show where the data is stored.
 - To generate dataset accepted for YOLO training, run the command below to change each solo folder to coco dataset.
 ```bash
-GIT_CLONE_PROTECTION_ACTIVE=false git clone https://github.com/NTU-Mecatron/UnitySim.git
+solo2coco <SOLO_PATH> <COCO_PATH>
 ```
+Prerequisite: you need to setup Pysolotools by referring the guide [here](https://docs.unity3d.com/Packages/com.unity.perception@1.0/manual/Tutorial/convert_to_coco.html)
 
