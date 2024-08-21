@@ -43,9 +43,27 @@ This game object has a volume with `Motion Blur` attached to it. It is created t
 
 > Note: For more information, please refer to the [Unity Perception Tutorial](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Tutorial/Phase1.md)
 
-### Randomizers
-The randmoizers are implemented here in order to generate various combinations of brittle stars layouts with different seabeds.
+## Randomizers
+The randomizers are implemented here in order to generate various combinations of brittle stars layouts with different seabeds.
 > Note: For proper setup guide of randomizers, please refer to the [Unity Perception Tutorial 1](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Tutorial/Phase1.md) and [Unity Perception Tutorial 2](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/Tutorial/Phase2.md)
 
 ### BackgroundObjectPlacementRandomizer
 ![image](https://github.com/user-attachments/assets/c9ea983a-9230-47a9-9c8c-912ff52e7e7a)
+
+### TextureRandomizer
+![image](https://github.com/user-attachments/assets/b4aa4bdc-fd6e-4309-8863-24245663dd7f)
+
+### ForegroundObjectPlacementRandomizer
+![image](https://github.com/user-attachments/assets/9c5b605c-2f58-45a2-92a5-ad45c13409a5)
+
+### RotationRandomizer
+![image](https://github.com/user-attachments/assets/f2d065aa-3384-4def-a0c9-6b817d0c9301)
+
+### MyLightRandomizer
+![image](https://github.com/user-attachments/assets/218569a3-6acc-4d2f-93b2-022d1dce0d28)
+
+### ForegroundScaleRandomizer
+![image](https://github.com/user-attachments/assets/44bb3912-d2a1-4062-9cd1-bb8af2e4edb9)
+
+
+
