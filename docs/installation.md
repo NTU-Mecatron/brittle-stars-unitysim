@@ -9,12 +9,12 @@ Prerequisite: you need to [install Git-LFS](https://docs.github.com/en/repositor
 You can clone the project with the following command:
 For Ubuntu:
 ```bash
-GIT_CLONE_PROTECTION_ACTIVE=false git clone https://github.com/NTU-Mecatron/UnitySim.git
+GIT_CLONE_PROTECTION_ACTIVE=false git clone https://github.com/NTU-Mecatron/brittle-stars-unitysim.git
 ```
 For Window:
 ```bash
 set GIT_CLONE_PROTECTION_ACTIVE=false 
-git clone https://github.com/NTU-Mecatron/UnitySim.git
+git clone https://github.com/NTU-Mecatron/brittle-stars-unitysim.git
 ```
 
 ## Opening the Project
@@ -25,7 +25,7 @@ After opening the project, navigate to the `Assets/Scenes` folder. As of now the
 
 ![image](https://github.com/user-attachments/assets/4a662bd5-343a-40a9-ae2b-1ae07316df5a)
 
-## Configuring the external Script Editor
+## Configuring the external Script Editor (Optional)
 
 You can either use Microsoft Visual Studio or Visual Studio Code as the script editor. Common steps for setting up:  
 
