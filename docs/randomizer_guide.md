@@ -27,10 +27,10 @@ We have made one example scene called `OutdoorsScene`. You can create your own s
 ![image](https://github.com/user-attachments/assets/e9ce1bb2-5d8a-4203-802b-65a28237b43f)
 
 The Simulation Scene has a few randomizers:
-- [BackgroundObjectPlacementRandomizer](#backgroundobjectplacementrandomizer). Spawn different shapes (cubes, cylinderd, spheres etc.) to act as chaotic background during synthetic data generation.
+- [BackgroundObjectPlacementRandomizer](#backgroundobjectplacementrandomizer). Spawn different shapes (cubes, cylinderd, spheres etc.) during synthetic data generation.
 - [TextureRandomizer](#texturerandomizer). Allocate random seabed images to the shapes during synthetic data generation.
 - [ForegroundObjectPlacementRandomizer](#foregroundobjectplacementrandomizer). Spawn random pictures of brittle stars during synthetic data generation.
-- [RotationRandomizer](#rotationrandomizer). Randomize the angle of background object during synthetic data generation, so usually this randomizer will be put above the **_ForegroundObjectPlacementRandomizer_**.
+- [RotationRandomizer](#rotationrandomizer). Randomize the angle of background objects during synthetic data generation.
 - [MyLightRandomizer](#mylightrandomizer). Randomize the color and brightness of light during synthetic data generation.
 - [ForegroundScaleRandomizer](#foregroundscalerandomizer). Randomize the size of brittle stars pictures during synthetic data generation.
 
@@ -56,7 +56,7 @@ The randomizers are implemented here in order to generate various combinations o
 ### BackgroundObjectPlacementRandomizer
 ![image](https://github.com/user-attachments/assets/c9ea983a-9230-47a9-9c8c-912ff52e7e7a)
 
-This randomizer will scatter different shapes of seabeds at the background of the camera view. Here, we are using the Prefabs provided in the sample folder of perception.
+This randomizer will scatter different shapes at the background of the camera view to act as chaotic background. Here, we are using the Prefabs provided in the sample folder of perception.
 - **🟢 Action**: Click _**Add Folder**_, and from the file explorer window that opens, choose the folder which prefabs needed are stored. In this project, we use the sample prefabs in `Assets/Samples/Perception/<Perception Package Version>/Tutorial Files/Background Objects/Prefabs`.
 - **🟢 Action**: Set the rest of the properties of `Depth`, `Layer Count`, `Separation Distance` and `Placement Area` according to your preferences. The parameters we used is  `Depth = 0, Layer Count = 2, Separation Distance = 0.7, Placement Area = (8,8)`.
 The `Separation Distance` will define how crowded the prefabs of seabed are, while `Placement Area` will control the area of where prefabs of seabed will be scattered.
@@ -64,7 +64,7 @@ The `Separation Distance` will define how crowded the prefabs of seabed are, whi
 ### TextureRandomizer
 ![image](https://github.com/user-attachments/assets/b4aa4bdc-fd6e-4309-8863-24245663dd7f)
 
-This randomizer will render the seabed pictures onto the background object that we scatter with **_BackgroundObjectPlacementRandomizer_**.
+This randomizer will render the seabed pictures onto the background shapes that we scatter with **_BackgroundObjectPlacementRandomizer_**.
 - **🟢 Action**: Click _**Add Folder**_, and from the file explorer window that opens, choose the folder which seabed pictures needed are stored. In this project, we use the images in `Assets\Background\Images`.
 
 ### ForegroundObjectPlacementRandomizer
@@ -78,14 +78,14 @@ The `Separation Distance` will define how crowded the prefabs of brittle stars a
 ### RotationRandomizer
 ![image](https://github.com/user-attachments/assets/f2d065aa-3384-4def-a0c9-6b817d0c9301)
 
-This randomizer will flip the pictures of brittle stars to stimulate brittle stars on non-flat surfaces.
+This randomizer will flip the background objects, so usually this randomizer will be put above the **_ForegroundObjectPlacementRandomizer_**.
 - **🟢 Action**: In the UI snippet for `RotationRandomizer`, verify that all the minimum values for the three ranges are `-10` and that maximum values are `10`.
 If the rotation angle is too large, it will make the brittle stars look thinner, harder to be recoginized.
 
 ### MyLightRandomizer
 ![image](https://github.com/user-attachments/assets/218569a3-6acc-4d2f-93b2-022d1dce0d28)
 
-This randomizer will change the direction of light in camera view.
+This randomizer will change the color and brightness of light in camera view.
 - **🟢 Action**: In the UI snippet for `MyLightRandomizer`, verify that `Light Intensity = (0,2), Temperature = (3000,16000)`.
 
 ### ForegroundScaleRandomizer
