@@ -27,11 +27,11 @@ We have made one example scene called `OutdoorsScene`. You can create your own s
 ![image](https://github.com/user-attachments/assets/e9ce1bb2-5d8a-4203-802b-65a28237b43f)
 
 The Simulation Scene has a few randomizers:
-- [BackgroundObjectPlacementRandomizer](#backgroundobjectplacementrandomizer). Randomize the shape of seabed during synthetic data generation.
-- [TextureRandomizer](#texturerandomizer). Randomize the seabed during synthetic data generation.
-- [ForegroundObjectPlacementRandomizer](#foregroundobjectplacementrandomizer). Randomize the pictures of brittle stars during synthetic data generation.
-- [RotationRandomizer](#rotationrandomizer). Randomize the angle of brittle stars picture during synthetic data generation.
-- [MyLightRandomizer](#mylightrandomizer). Randomize the direction of light during synthetic data generation.
+- [BackgroundObjectPlacementRandomizer](#backgroundobjectplacementrandomizer). Spawn different shapes (cubes, cylinderd, spheres etc.) to act as chaotic background during synthetic data generation.
+- [TextureRandomizer](#texturerandomizer). Allocate random seabed images to the shapes during synthetic data generation.
+- [ForegroundObjectPlacementRandomizer](#foregroundobjectplacementrandomizer). Spawn random pictures of brittle stars during synthetic data generation.
+- [RotationRandomizer](#rotationrandomizer). Randomize the angle of background object during synthetic data generation, so usually this randomizer will be put above the **_ForegroundObjectPlacementRandomizer_**.
+- [MyLightRandomizer](#mylightrandomizer). Randomize the color and brightness of light during synthetic data generation.
 - [ForegroundScaleRandomizer](#foregroundscalerandomizer). Randomize the size of brittle stars pictures during synthetic data generation.
 
 
