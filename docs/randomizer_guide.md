@@ -91,7 +91,7 @@ This randomizer will change the color and brightness of light in camera view.
 ### ForegroundScaleRandomizer
 ![image](https://github.com/user-attachments/assets/44bb3912-d2a1-4062-9cd1-bb8af2e4edb9)
 
-This randomizer will stimulate the size of brittle stars in the camera view.
+This randomizer will stimulate brittle stars with different sizes in the camera view.
 - **🟢 Action**: In the UI snippet for `ForegroundScaleRandomizer`, verify that `X = (0.02,0.08), Y = (0.01,0.1), Z = (0.02,0.08)`.
 
 
